@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irrigation Control</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+<a href="/dashboard" class="back-button">Back to Dashboard</a>
+
+<header>
+    <h1>Irrigation Control</h1>
+</header>
+
+<div class="container">
+    <!-- Status and Manual Controls -->
+    <div class="status">
+        <div class="status-info">
+            <p>Last Activated: 2 hrs ago</p>
+        </div>
+        <div class="manual-controls">
+            <div class="toggle-buttons">
+                <button id="manualBtn" class="toggle manual">Manual Mode</button>
+                <button id="autoBtn" class="toggle auto active">Auto Mode</button>
+            </div>
+            <div class="on-off-buttons">
+                <button id="onBtn" class="control-btn on active">ON</button>
+                <button id="offBtn" class="control-btn off">OFF</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Automation Settings -->
+    <div class="automation-settings">
+        <h2>Automation Settings</h2>
+        <div class="setting">
+            <label for="moisture-level">Soil Moisture Threshold:</label>
+            <input type="range" id="moisture-level" min="0" max="100">
+        </div>
+        <div class="setting">
+            <label for="water-duration">Water Duration (mins):</label>
+            <input type="range" id="water-duration" min="0" max="60">
+        </div>
+    </div>
+</div>
+
+<script src="../static/script.js"></script>
+</body>
+</html>
+
+

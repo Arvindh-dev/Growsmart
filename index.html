@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowSmart - Login</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>GrowSmart</h1>
+    </div>
+    <div class="main-container">
+        <div class="farmer-quote">
+            <img src="../static/farmer_img-removebg-preview.png" alt="Farmer">
+            <p>உழவரின் உற் தோழன்.</p>
+        </div>
+        
+        <form action="/login" method="POST" class="login-form">
+            <h2>Login</h2>
+
+            <!-- Display flash messages here -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <div class="flash-container">
+                        {% for category, message in messages %}
+                            <div class="flash {{ category }}">{{ message }}</div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endwith %}
+
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="/register">Register here</a></p>
+        </form>
+    </div>
+</body>
+</html>
+
+

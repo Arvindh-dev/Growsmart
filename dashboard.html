@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowSmart - Dashboard</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Welcome, {{ user_name }}!</h1>
+
+        <div class="grid-layout">
+            <!-- Temperature Box -->
+            <div class="card weather-card">
+                <div class="card-icon">🌦️</div>
+                <div class="card-content">
+                    <h2>27°C</h2>
+                    <p>Rainy</p>
+                </div>
+            </div>
+
+            <!-- Field Status Box -->
+            <div class="card field-status-card">
+                <div class="card-icon">🌱</div>
+                <div class="card-content">
+                    <h2>Field Status</h2>
+                    <p>Good Condition</p>
+                </div>
+            </div>
+
+            <!-- Crop Health Box -->
+            <div class="card crop-health-card">
+                <div class="card-icon">🌾</div>
+                <div class="card-content">
+                    <h2>Crop Health</h2>
+                    <p>Healthy</p>
+                </div>
+            </div>
+
+            <!-- Last Irrigated Status Box -->
+            <div class="card irrigation-status-card">
+                <div class="card-icon">💧</div>
+                <div class="card-content">
+                    <h2>Last Irrigated</h2>
+                    <p>2 hours ago</p>
+                </div>
+            </div>
+
+            <!-- Government Schemes Box -->
+            <div class="card schemes-card">
+                <div class="card-icon">🏷️</div>
+                <div class="card-content">
+                    <h2>Govt Schemes</h2>
+                    <p>View Latest Schemes</p>
+                </div>
+            </div>
+
+            <!-- User Profile Box -->
+            <div class="card user-profile-card">
+                <div class="card-icon">👤</div>
+                <div class="card-content">
+                    <h2>User Profile</h2>
+                    <p>View and Edit Profile</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowSmart - User Profile</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>User Profile</h1>
+            <nav>
+                <a href="/dashboard">Dashboard</a>
+                <a href="/crop_health">Crop Health</a>
+                <a href="/field_conditions">Field Conditions</a>
+                <a href="/irrigation">Irrigation</a>
+                <a href="/schemes">Government Schemes</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Profile Details</h2>
+            <p>Name: {{ user_name }}</p>
+            <p>Email: {{ user_email }}</p>
+            <button>Update Profile</button>
+        </main>
+    </div>
+</body>
+</html>
